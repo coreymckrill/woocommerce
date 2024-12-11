@@ -429,11 +429,11 @@ class MiniCart extends AbstractBlock {
 			$show_product_count = $cart && $cart->get_cart_contents_count() > 0;
 		}
 
-		$button_html = $this->get_cart_price_markup( $attributes ) . '
-		<span class="wc-block-mini-cart__quantity-badge">
+		$button_html = '<span class="wc-block-mini-cart__quantity-badge">
 			' . $icon . '
 			' . ( $show_product_count ? '<span class="wc-block-mini-cart__badge" style="background:' . $product_count_color . '"></span>' : '' ) . '
-		</span>';
+		</span>
+		' . $this->get_cart_price_markup( $attributes );
 
 		if ( is_cart() || is_checkout() ) {
 			if ( $this->should_not_render_mini_cart( $attributes ) ) {
