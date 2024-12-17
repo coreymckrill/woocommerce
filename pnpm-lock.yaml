@@ -1583,7 +1583,7 @@ importers:
     dependencies:
       '@automattic/puppeteer-utils':
         specifier: github:Automattic/puppeteer-utils#0f3ec50
-        version: https://codeload.github.com/Automattic/puppeteer-utils/tar.gz/0f3ec50
+        version: https://codeload.github.com/Automattic/puppeteer-utils/tar.gz/0f3ec50(react-native@0.73.0(@babel/core@7.12.9)(@babel/preset-env@7.12.7(@babel/core@7.12.9))(encoding@0.1.13)(react@18.3.1))
       '@woocommerce/api':
         specifier: ^0.2.0
         version: 0.2.0
@@ -3641,8 +3641,8 @@ importers:
         specifier: ^11.11.0
         version: 11.11.0(@emotion/react@11.11.1(@types/react@18.3.16)(react@18.3.1))(@types/react@18.3.16)(react@18.3.1)
       '@preact/signals':
-        specifier: ^1.2.2
-        version: 1.2.2(preact@10.19.3)
+        specifier: ^1.3.0
+        version: 1.3.1(preact@10.25.1)
       '@woocommerce/tracks':
         specifier: workspace:^
         version: link:../../packages/js/tracks
@@ -3702,7 +3702,7 @@ importers:
         version: 2.2.2
       deepsignal:
         specifier: 1.3.6
-        version: 1.3.6(@preact/signals-core@1.8.0)(@preact/signals@1.2.2(preact@10.19.3))(preact@10.19.3)
+        version: 1.3.6(@preact/signals-core@1.8.0)(@preact/signals@1.3.1(preact@10.25.1))(preact@10.25.1)
       dinero.js:
         specifier: 1.9.1
         version: 1.9.1
@@ -3725,8 +3725,8 @@ importers:
         specifier: 3.9.2
         version: 3.9.2
       preact:
-        specifier: ^10.19.3
-        version: 10.19.3
+        specifier: ^10.24.2
+        version: 10.25.1
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -8589,16 +8589,8 @@ packages:
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
-  '@preact/signals-core@1.5.1':
-    resolution: {integrity: sha512-dE6f+WCX5ZUDwXzUIWNMhhglmuLpqJhuy3X3xHrhZYI0Hm2LyQwOu0l9mdPiWrVNsE+Q7txOnJPgtIqHCYoBVA==}
-
   '@preact/signals-core@1.8.0':
     resolution: {integrity: sha512-OBvUsRZqNmjzCZXWLxkZfhcgT+Fk8DDcT/8vD6a1xhDemodyy87UJRJfASMuSD8FaAIeGgGm85ydXhm7lr4fyA==}
-
-  '@preact/signals@1.2.2':
-    resolution: {integrity: sha512-ColCqdo4cRP18bAuIR4Oik5rDpiyFtPIJIygaYPMEAwTnl4buWkBOflGBSzhYyPyJfKpkwlekrvK+1pzQ2ldWw==}
-    peerDependencies:
-      preact: 10.x
 
   '@preact/signals@1.3.1':
     resolution: {integrity: sha512-nNvSF2O7RDzxp1Rm7SkA5QhN1a2kN8pGE8J5o6UjgDof0F0Vlg6d6HUUVxxqZ1uJrN9xnH2DpL6rpII3Es0SsQ==}
@@ -22580,9 +22572,6 @@ packages:
     resolution: {integrity: sha512-jOrdVvzUXBC7C+9gkIkpDJ3HIxOHTIqjpQ4C1EMt1ZGeMvSEpbFCKq23DEfgsj46vMnDgyQf+1ZLp2Wm+bKSsA==}
     engines: {node: '>=10'}
 
-  preact@10.19.3:
-    resolution: {integrity: sha512-nHHTeFVBTHRGxJXKkKu5hT8C/YWBkPso4/Gad6xuj5dbptt9iF9NZr9pHbPhBrnT2klheu7mHTxTZ/LjwJiEiQ==}
-
   preact@10.25.1:
     resolution: {integrity: sha512-frxeZV2vhQSohQwJ7FvlqC40ze89+8friponWUFeVEkaCfhC6Eu4V0iND5C9CXz8JLndV07QRDeXzH1+Anz5Og==}
 
@@ -27012,25 +27001,6 @@ snapshots:
       - supports-color
 
   '@automattic/material-design-icons@1.0.0': {}
-
-  '@automattic/puppeteer-utils@https://codeload.github.com/Automattic/puppeteer-utils/tar.gz/0f3ec50':
-    dependencies:
-      '@babel/cli': 7.23.4(@babel/core@7.23.5)
-      '@babel/core': 7.23.5
-      '@babel/preset-env': 7.23.5(@babel/core@7.23.5)
-      '@slack/web-api': 5.15.0
-      '@wordpress/e2e-test-utils': 3.0.0(jest@24.9.0)(puppeteer@2.1.1)
-      config: 3.3.7
-      eslint: 6.7.2
-      jest: 24.9.0
-      prettier: wp-prettier@1.19.1
-      puppeteer: 2.1.1
-    transitivePeerDependencies:
-      - bufferutil
-      - debug
-      - react-native
-      - supports-color
-      - utf-8-validate
 
   '@automattic/puppeteer-utils@https://codeload.github.com/Automattic/puppeteer-utils/tar.gz/0f3ec50(react-native@0.73.0(@babel/core@7.12.9)(@babel/preset-env@7.12.7(@babel/core@7.12.9))(encoding@0.1.13)(react@18.3.1))':
     dependencies:
@@ -33891,9 +33861,7 @@ snapshots:
       source-map: 0.6.1
       string-length: 2.0.0
     transitivePeerDependencies:
-      - bufferutil
       - supports-color
-      - utf-8-validate
 
   '@jest/reporters@25.5.1':
     dependencies:
@@ -34107,12 +34075,9 @@ snapshots:
       jest-runner: 25.5.4
       jest-runtime: 25.5.4
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - utf-8-validate
 
-  '@jest/test-sequencer@26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))':
+  '@jest/test-sequencer@26.6.3':
     dependencies:
       '@jest/test-result': 26.6.2
       graceful-fs: 4.2.11
@@ -34120,11 +34085,7 @@ snapshots:
       jest-runner: 26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))
       jest-runtime: 26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   '@jest/test-sequencer@27.5.1':
     dependencies:
@@ -35193,14 +35154,7 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
-  '@preact/signals-core@1.5.1': {}
-
   '@preact/signals-core@1.8.0': {}
-
-  '@preact/signals@1.2.2(preact@10.19.3)':
-    dependencies:
-      '@preact/signals-core': 1.5.1
-      preact: 10.19.3
 
   '@preact/signals@1.3.1(preact@10.25.1)':
     dependencies:
@@ -41078,7 +41032,7 @@ snapshots:
 
   '@woocommerce/e2e-environment@0.3.0(@babel/core@7.23.5)(react@18.3.1)':
     dependencies:
-      '@automattic/puppeteer-utils': https://codeload.github.com/Automattic/puppeteer-utils/tar.gz/0f3ec50
+      '@automattic/puppeteer-utils': https://codeload.github.com/Automattic/puppeteer-utils/tar.gz/0f3ec50(react-native@0.73.0(@babel/core@7.12.9)(@babel/preset-env@7.12.7(@babel/core@7.12.9))(encoding@0.1.13)(react@18.3.1))
       '@jest/test-sequencer': 25.5.4
       '@slack/web-api': 6.10.0
       '@woocommerce/api': 0.2.0
@@ -43167,18 +43121,6 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@wordpress/e2e-test-utils@3.0.0(jest@24.9.0)(puppeteer@2.1.1)':
-    dependencies:
-      '@babel/runtime': 7.26.0
-      '@wordpress/keycodes': 2.19.3
-      '@wordpress/url': 2.22.2(react-native@0.73.0(@babel/core@7.23.5)(@babel/preset-env@7.25.7(@babel/core@7.23.5))(encoding@0.1.13)(react@18.3.1))
-      jest: 24.9.0
-      lodash: 4.17.21
-      node-fetch: 1.7.3
-      puppeteer: 2.1.1
-    transitivePeerDependencies:
-      - react-native
-
   '@wordpress/e2e-test-utils@3.0.0(jest@24.9.0)(puppeteer@2.1.1)(react-native@0.73.0(@babel/core@7.12.9)(@babel/preset-env@7.12.7(@babel/core@7.12.9))(encoding@0.1.13)(react@18.3.1))':
     dependencies:
       '@babel/runtime': 7.26.0
@@ -43208,7 +43150,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.23.5
       '@wordpress/keycodes': 2.19.3
-      '@wordpress/url': 2.22.2(react-native@0.73.0(@babel/core@7.23.5)(@babel/preset-env@7.25.7(@babel/core@7.23.5))(encoding@0.1.13)(react@18.3.1))
+      '@wordpress/url': 2.22.2(react-native@0.73.0(@babel/core@7.12.9)(@babel/preset-env@7.12.7(@babel/core@7.12.9))(encoding@0.1.13)(react@18.3.1))
       jest: 29.7.0(@types/node@22.9.1)(node-notifier@8.0.2)(ts-node@10.9.2(@types/node@22.9.1)(typescript@5.7.2))
       lodash: 4.17.21
       node-fetch: 2.7.0(encoding@0.1.13)
@@ -43221,7 +43163,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.23.5
       '@wordpress/keycodes': 2.19.3
-      '@wordpress/url': 2.22.2(react-native@0.73.0(@babel/core@7.23.5)(@babel/preset-env@7.25.7(@babel/core@7.23.5))(encoding@0.1.13)(react@18.3.1))
+      '@wordpress/url': 2.22.2(react-native@0.73.0(@babel/core@7.12.9)(@babel/preset-env@7.12.7(@babel/core@7.12.9))(encoding@0.1.13)(react@18.3.1))
       jest: 25.5.4
       lodash: 4.17.21
       node-fetch: 2.7.0(encoding@0.1.13)
@@ -44159,9 +44101,9 @@ snapshots:
 
   '@wordpress/interactivity@3.0.1(@preact/signals-core@1.8.0)':
     dependencies:
-      '@preact/signals': 1.2.2(preact@10.19.3)
-      deepsignal: 1.3.6(@preact/signals-core@1.8.0)(@preact/signals@1.2.2(preact@10.19.3))(preact@10.19.3)
-      preact: 10.19.3
+      '@preact/signals': 1.3.1(preact@10.25.1)
+      deepsignal: 1.3.6(@preact/signals-core@1.8.0)(@preact/signals@1.3.1(preact@10.25.1))(preact@10.25.1)
+      preact: 10.25.1
     transitivePeerDependencies:
       - '@preact/signals-core'
       - '@preact/signals-react'
@@ -45112,7 +45054,7 @@ snapshots:
       expect-puppeteer: 4.4.0
       filenamify: 4.3.0
       jest: 26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))
-      jest-circus: 26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))
+      jest-circus: 26.6.3
       jest-dev-server: 5.0.3(debug@4.3.4)
       jest-environment-node: 26.6.2
       markdownlint: 0.23.1
@@ -45191,7 +45133,7 @@ snapshots:
       expect-puppeteer: 4.4.0
       filenamify: 4.3.0
       jest: 26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))
-      jest-circus: 26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))
+      jest-circus: 26.6.3
       jest-dev-server: 5.0.3(debug@4.3.4)
       jest-environment-node: 26.6.2
       markdownlint: 0.23.1
@@ -49650,11 +49592,11 @@ snapshots:
 
   deepmerge@4.3.1: {}
 
-  deepsignal@1.3.6(@preact/signals-core@1.8.0)(@preact/signals@1.2.2(preact@10.19.3))(preact@10.19.3):
+  deepsignal@1.3.6(@preact/signals-core@1.8.0)(@preact/signals@1.3.1(preact@10.25.1))(preact@10.25.1):
     optionalDependencies:
-      '@preact/signals': 1.2.2(preact@10.19.3)
+      '@preact/signals': 1.3.1(preact@10.25.1)
       '@preact/signals-core': 1.8.0
-      preact: 10.19.3
+      preact: 10.25.1
 
   default-browser-id@1.0.4:
     dependencies:
@@ -54116,7 +54058,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jest-circus@26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2)):
+  jest-circus@26.6.3:
     dependencies:
       '@babel/traverse': 7.25.3
       '@jest/environment': 26.6.2
@@ -54140,11 +54082,7 @@ snapshots:
       stack-utils: 2.0.6
       throat: 5.0.0
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   jest-circus@27.5.1:
     dependencies:
@@ -54379,7 +54317,7 @@ snapshots:
   jest-config@26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2)):
     dependencies:
       '@babel/core': 7.26.0
-      '@jest/test-sequencer': 26.6.3(ts-node@10.9.2(@types/node@20.17.8)(typescript@5.7.2))
+      '@jest/test-sequencer': 26.6.3
       '@jest/types': 26.6.2
       babel-jest: 26.6.3(@babel/core@7.26.0)
       chalk: 4.1.2
@@ -54958,9 +54896,7 @@ snapshots:
       pretty-format: 24.9.0
       throat: 4.1.0
     transitivePeerDependencies:
-      - bufferutil
       - supports-color
-      - utf-8-validate
 
   jest-jasmine2@25.5.4:
     dependencies:
@@ -59872,8 +59808,6 @@ snapshots:
   postman-url-encoder@3.0.5:
     dependencies:
       punycode: 2.3.1
-
-  preact@10.19.3: {}
 
   preact@10.25.1: {}
 
